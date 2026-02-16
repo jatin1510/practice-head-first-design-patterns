@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.ducksim_compound;
 
 import java.util.ArrayList;
 import java.util.List;

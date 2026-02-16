@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.ducksim_compound;
 
 public class QuackCounter implements Quackable {
     Quackable duck;

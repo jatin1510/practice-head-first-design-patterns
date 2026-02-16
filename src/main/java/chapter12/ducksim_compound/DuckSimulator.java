@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.ducksim_compound;
 
 public class DuckSimulator {
     public static void main(String[] args) {

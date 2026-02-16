@@ -1,15 +1,15 @@
-package chapter12;
+package chapter12.ducksim_compound;
 
-public class MallardDuck implements Quackable {
+public class DuckCall implements Quackable {
     Observable observable;
 
-    public MallardDuck() {
+    public DuckCall() {
         observable = new Observable(this);
     }
 
     @Override
     public void quack() {
-        System.out.println("Quack");
+        System.out.println("Kwak");
         notifyObservers();
     }
 
@@ -23,6 +23,6 @@ public class MallardDuck implements Quackable {
 
     @Override
     public String toString() {
-        return "Mallard Duck";
+        return "Duck Call";
     }
 }

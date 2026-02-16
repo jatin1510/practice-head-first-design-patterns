@@ -1,15 +1,18 @@
-package chapter12;
+package chapter12.ducksim_compound;
 
-public class ReadHeadDuck implements Quackable {
+public class GooseAdapter implements Quackable {
     Observable observable;
 
-    public ReadHeadDuck() {
+    private final Goose goose;
+
+    public GooseAdapter(Goose goose) {
+        this.goose = goose;
         observable = new Observable(this);
     }
 
     @Override
     public void quack() {
-        System.out.println("Quack");
+        goose.honk();
         notifyObservers();
     }
 
@@ -23,6 +26,6 @@ public class ReadHeadDuck implements Quackable {
 
     @Override
     public String toString() {
-        return "Read Head Duck";
+        return "Goose pretending to be a Duck";
     }
 }
